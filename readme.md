@@ -18,7 +18,7 @@ Repository for Harv-A-Bite
 
 <br/>
 
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/ci4-template)
+![](https://visit-counter.vercel.app/counter.png?page=RH-KD/Harv-A-Bite)
 
 <!-- ! Make sure it was similar to your github -->
 
