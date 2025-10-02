@@ -9,6 +9,6 @@ class Users extends BaseController
 {
     public function index()
     {
-        return view('user/landing');
+        return view('user/landingPage');
     }
 }
