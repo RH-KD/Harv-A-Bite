@@ -27,8 +27,22 @@
             <span class="font-bold text-2xl tracking-wide">Harv-a-bite</span>
         </div>
         <nav class="flex gap-4">
-            <a href="/login" class="bg-white hover:bg-blue-50 px-4 py-2 rounded font-semibold transition text-[var(--accent-blue)]">Login</a>
-            <a href="/signup" class="hover:bg-blue-700 px-4 py-2 rounded font-semibold text-white transition bg-[var(--accent-blue)]">Sign Up</a>
+            <a href="/login"
+                class="bg-white px-4 py-2 rounded font-semibold hover:text-white transition-colors duration-200 text-[var(--accent-blue)] hover:bg-[var(--accent-blue)]">
+                Login
+            </a>
+            <a href="/signup"
+                class="bg-white px-4 py-2 rounded font-semibold hover:text-white transition-colors duration-200 text-[var(--accent-blue)] hover:bg-[var(--accent-blue)]">
+                Sign Up
+            </a>
+            <a href="/moodBoard"
+                class="bg-white px-4 py-2 rounded font-semibold hover:text-white transition-colors duration-200 text-[var(--accent-blue)] hover:bg-[var(--accent-blue)]">
+                Mood Board
+            </a>
+            <a href="/roadMap"
+                class="bg-white px-4 py-2 rounded font-semibold hover:text-white transition-colors duration-200 text-[var(--accent-blue)] hover:bg-[var(--accent-blue)]">
+                Road Map
+            </a>
         </nav>
     </header>
 
