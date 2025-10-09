@@ -5,10 +5,10 @@
 
 <div align="center">
   <a href="https://github.com/RH-KD/">
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/taong_berde.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">Harverger</h3>
+  <h3 align="center">Harv-A-Bite</h3>
 </div>
 
 <!-- * Description Section -->
@@ -99,7 +99,7 @@ These are **sample modules** included (or suggested) for learning how to add fea
 ---
 
 ## Quick Start (Docker)
-
+ v
 Run the development stack and the app (rebuild if needed):
 
 ```cmd
@@ -222,6 +222,6 @@ AD-ProjectName/
 | YouTube “UI/UX Design”  | Video tutorials on modern web interface layouts and patterns.         | [https://www.youtube.com](https://www.youtube.com)                         |
 | Pinterest Design Boards | Inspiration for color schemes, typography, and component layouts.     | [https://www.pinterest.com](https://www.pinterest.com)                     |
 | Google Photos (Assets)  | Stock imagery and graphics used in UI mockups and documentation.      | [https://photos.google.com](https://photos.google.com)                     |
-| System Documentation    | Internal docs from PHP, MongoDB, and PostgreSQL used in development.  | — (see `/docs` folder in repo)                                             |
+
 
 <!-- ! Add what tools aided you -->
