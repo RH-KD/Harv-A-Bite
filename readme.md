@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/RH-KD/">
-    <img src="./assets/img/taong_berde.png" alt="Nyebe" width="130" height="100">
+    <img src="/assets/img/taong_berde.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
   <h3 align="center">Harv-A-Bite</h3>
@@ -13,9 +13,9 @@
 
 <!-- * Description Section -->
 <div align="center">
-Repository for Harv-A-Bite
+Repository for Harv-A-Bite, A Food chain whre you can Discover delicious flavors, vibrant ambiance, and a taste of home. Join us for a memorable dining experience! :3c
 </div>
-
+  
 <br/>
 
 ![](https://visit-counter.vercel.app/counter.png?page=RH-KD/Harv-A-Bite)
@@ -89,11 +89,6 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 #### Databases
 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge\&logo=firebase\&logoColor=black)
-
 <!-- ! Keep only the used technology -->
 
 ---
@@ -145,6 +140,60 @@ docker compose exec php php spark make:controller Usars
 - Create a seeder (for test/dev data) (using CodeIgniter's spark tool):
 ```cmd
 docker compose exec php php spark make:seeder UserzSeeder
+```
+
+RUNDOWN ON PROCESS
+- CREATE ISSUE (in GitHub)
+
+
+- CREATE BRANCH (in VS)
+```cmd
+git checkout -b (location ex: frontend/name)
+```
+
+-ADD VIEW (in VS)
+```cmd
+name.php in Views/user folder
+```
+
+- UPDATE CONTROLLER (in VS)
+- in Users.php 
+```
+public function name() {
+    return view('user/name');
+}
+```
+
+- UPDATE ROUTES (in VS)
+- in Routes.php
+```
+$routes->get('/name', 'Users::name');
+```
+
+- STAGE CHANGES (in VS)
+```cmd
+git add .
+```
+
+- COMMIT CHANGES (in VS)
+```cmd
+git commit -m "feat(name): description"
+```
+
+- PUSH BRANCH TO GITHUB (in VS)
+```cmd
+git push origin frontend/name
+```
+
+- CREATE PULL REQUEST (in GitHub)
+```cmd
+make sure to compare with development
+```
+
+- SYNC (in VS)
+```cmd
+git checkout development
+git pull origin development
 ```
 
 If you prefer, you can include `-f "compose.yaml"` explicitly; the shorter commands above work when running from the repo root.
