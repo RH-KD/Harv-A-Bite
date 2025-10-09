@@ -1,0 +1,1 @@
+<a href="<?= esc($href ?? '#') ?>"><button class="bg-white px-6 py-2 border-[var(--accent-blue)] border-2 rounded-lg font-montserrat font-semibold hover:text-white transition text-[var(--accent-blue)] hover:bg-[var(--accent-blue)]"><?= esc($lbl ?? 'Button') ?></button></a>
