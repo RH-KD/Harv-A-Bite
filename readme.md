@@ -8,7 +8,7 @@
     <img src="/assets/img/taong_berde.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- * Title Section -->
-  <h3 align="center">Harv-A-Bite</h3>
+  <h3 align="center">AD - Harv-A-Bite</h3>
 </div>
 
 <!-- * Description Section -->
@@ -54,12 +54,8 @@ Repository for Harv-A-Bite, A Food chain whre you can Discover delicious flavors
 
 ## Overview
 
-This template provides a **minimal CodeIgniter 4 project layout** with conventions for file organization, commit practices, and simple modules.
-
-It is designed to be **easy to start with** and a **reference for adding new features**.
-
-* **Purpose**: a clean starting point for CI4 apps.
-* **Audience**: developers who want a predictable structure and quick onboarding.
+Harv-A-Bite is a food chain offering healthy alternatives to fast food classiccs such as burgers, fries, floats, and shakes.
+Discover delicious flavors, vibrant ambiance, and a taste of home. Join us for a memorable dining experience! :3c
 
 ### Key Components
 
