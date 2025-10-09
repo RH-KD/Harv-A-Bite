@@ -63,9 +63,11 @@ These are **sample modules** included (or suggested) for learning how to add fea
 
 | Component                 | Purpose                                                             | Notes                                                   |
 | ------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------- |
-| **Auth (Sample)**         | Basic login/logout and role check (admin/user).                     | Uses CI4 sessions + MySQL `users` table.                |
-| **CRUD Module**           | Example entity (`Posts` or `Tasks`) with create/read/update/delete. | Demonstrates Controller → Service → Repository pattern. |
-| **Scheduler (Sample)**    | Simple to-do list with due dates.                                   | Shows how to extend with new tables and services.       |
+| **Buttons**         | Buttons to link and submit data               | 4 differnt button designs               |
+| **Cards**           | Displays for products and items | 3 different designs |
+| **Header**    | Container for header objects                                 | its a header    |
+| **Footer**    | Container for ending statements/relevant footer info                              | its a footer       |
+| **CTA**    | Tagline                                 | Discover delicious flavors, vibrant ambiance, and a taste of home. Join us for a memorable dining experience! :3c     |
 
  <!-- ! Start simple. Use these modules as **learning samples**; extend or replace them based on your project’s needs. -->
 
