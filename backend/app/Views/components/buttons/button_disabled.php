@@ -1,0 +1,1 @@
+<a href="<?= esc($href ?? '#') ?>"><button class="bg-gray-300 opacity-60 px-6 py-2 rounded-lg font-inter font-semibold text-gray-500 cursor-not-allowed" disabled><?= esc($lbl ?? 'Button') ?></button></a>
