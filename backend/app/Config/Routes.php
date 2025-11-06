@@ -12,3 +12,4 @@ $routes->get('/moodBoard', 'Users::moodBoard');
 $routes->get('/roadMap', 'Users::roadMap');
 $routes->get('/dashboard', 'Admin::dashboard');
 $routes->get('/menuPage', 'Admin::menuPage');
+$routes->get('/orderPage', 'Admin::orderPage');
