@@ -13,7 +13,7 @@
             <h2 class="mb-4 font-bold text-xl">Quick Actions</h2>
             <div class="flex flex-col gap-3">
                 <?= view('components/buttons/button_primary', ["href" => "/dashboard", "lbl" => "Dashboard"]) ?>
-                <?= view('components/buttons/button_primary', ["href" => "#", "lbl" => "Service page"]) ?>
+                <?= view('components/buttons/button_primary', ["href" => "/menuPage", "lbl" => "Menu page"]) ?>
                 <?= view('components/buttons/button_primary', ["href" => "#", "lbl" => "Requests page"]) ?>
             </div>
         </div>
