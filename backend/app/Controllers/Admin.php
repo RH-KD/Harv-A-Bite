@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Users extends BaseController
+class Admin extends BaseController
 {
     public function dashboard()
     {
@@ -15,5 +15,10 @@ class Users extends BaseController
     public function menuPage()
     {
         return view('admin/menuPage');
+    }
+
+    public function orderPage()
+    {
+        return view('admin/orderPage');
     }
 }
