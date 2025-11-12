@@ -61,4 +61,42 @@ class Auth extends BaseController
         setcookie(session_name(), '', time() - 3600, $params['path'] ?? '/', $params['domain'] ?? '', isset($_SERVER['HTTPS']), true);
         return redirect()->to('/');
     }
+
+    public function signup(){
+        $session = session();
+        $request = service('request');
+        $validation = \Config\Services::validation();
+        $validation->setRule('username', 'Username', 'required|min_length[3]|is_unique[userTable.username]');
+        $validation->setRule('email', 'Email', 'required|valid_email|is_unique[userTable.email]');
+        $validation->setRule('password', 'Password', 'required|min_length[8]');
+        $validation->setRule('confirmPassword', 'Confirm Password', 'required|matches[password]');
+
+        $post = $request->getPost();
+
+        if (! $validation->run($post)) {
+            $session->setFlashdata('errors', $validation->getErrors());
+            $session->setFlashdata('old', $post);
+            return redirect()->back()->withInput();
+        }
+        $userModel = new \App\Models\UserModel();
+
+        $data = [
+            'username'        => $post['username'],
+            'email'           => $post['email'],
+            'password_hash'   => password_hash($post['password'], PASSWORD_DEFAULT),
+            'type'            => 'user',
+            'account_status'  => 1,
+            'email_activated' => 0
+        ];
+
+        $inserted = $userModel->insert($data);
+
+        if ($inserted) {
+            $session->setFlashdata('success', 'Account created successfully! You can now log in.');
+            return redirect()->to('/login');
+        } else {
+            $session->setFlashdata('error', 'Something went wrong. Please try again.');
+            return redirect()->back()->withInput();
+        }
+    }
 }

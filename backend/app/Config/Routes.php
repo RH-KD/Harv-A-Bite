@@ -16,4 +16,5 @@ $routes->get('/menuPage', 'Admin::menuPage');
 $routes->get('/orderPage', 'Admin::orderPage');
 
 $routes->post('/login', 'Auth::login');
+$routes->post('/signup', 'Auth::signup');
 $routes->get('/logout', 'Auth::logout');
