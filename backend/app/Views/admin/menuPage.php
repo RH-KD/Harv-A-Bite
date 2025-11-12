@@ -7,7 +7,6 @@
 <body class="flex flex-col bg-white min-h-screen">
 <!-- Header -->
     <?= view("components/header") ?>
-    <?= view("components/adminQuick") ?>
 
     <!-- Main Content -->
     <main class="flex-grow p-6">

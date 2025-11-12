@@ -7,7 +7,6 @@
 <body class="flex flex-col bg-white min-h-screen">
 <!-- Header -->
     <?= view("components/header") ?>
-    <?= view("components/adminQuick") ?>
 
                 <!-- Statistics -->
     <div class="bg-white shadow-md p-6 border rounded-lg">
