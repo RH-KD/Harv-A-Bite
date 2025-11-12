@@ -7,7 +7,6 @@
 <body class="flex flex-col bg-white min-h-screen">
 <!-- Header -->
     <?= view("components/header") ?>
-    <?= view("components/adminQuick") ?>
 
     <main class="mx-auto mt-6 px-4 sm:px-6 lg:px-8 pb-12 w-full max-w-7xl">
         <div class="flex justify-between items-center mb-6">
