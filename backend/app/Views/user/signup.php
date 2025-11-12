@@ -32,6 +32,11 @@
                     <input type="password" id="password" name="password" required
                         class="px-4 py-2 border rounded focus:outline-none focus:ring-2 w-full focus:ring-[color:var(--accent-blue)]">
                 </div>
+                <div>
+                    <label for="confirmPassword" class="block mb-1 font-medium text-gray-700 text-sm">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                        class="px-4 py-2 border rounded focus:outline-none focus:ring-2 w-full focus:ring-[color:var(--accent-blue)]">
+                </div>
                 <button type="submit"
                     class="bg-[color:var(--primary-orange)] hover:bg-orange-500 px-4 py-2 rounded w-full font-semibold text-white transition">
                     Sign Up

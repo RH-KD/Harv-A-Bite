@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table            = 'users';
+    protected $table            = 'userTable';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = '\App\\Entities\\User';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'username', 'email', 'password_hash'];
+    protected $allowedFields    = ['id', 'username', 'email', 'type', 'password_hash'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -21,7 +21,7 @@ class UserModel extends Model
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

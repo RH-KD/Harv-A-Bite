@@ -13,6 +13,7 @@ class UsersSeeder extends Seeder
             [
                 'username'      => 'admin',
                 'email'         => 'admin@example.com',
+                'type'          => 'admin',
                 'password_hash' => $password,
                 'created_at'    => $now,
                 'updated_at'    => $now,
@@ -20,6 +21,7 @@ class UsersSeeder extends Seeder
             [
                 'username'      => 'user1',
                 'email'         => 'user1@example.com',
+                'type'          => 'user',
                 'password_hash' => $password,
                 'created_at'    => $now,
                 'updated_at'    => $now,

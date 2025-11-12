@@ -10,6 +10,11 @@ $routes->get('/login', 'Users::login');
 $routes->get('/signup', 'Users::signup');
 $routes->get('/moodBoard', 'Users::moodBoard');
 $routes->get('/roadMap', 'Users::roadMap');
+
 $routes->get('/dashboard', 'Admin::dashboard');
 $routes->get('/menuPage', 'Admin::menuPage');
 $routes->get('/orderPage', 'Admin::orderPage');
+
+$routes->post('/login', 'Auth::login');
+$routes->post('/signup', 'Auth::signup');
+$routes->get('/logout', 'Auth::logout');
