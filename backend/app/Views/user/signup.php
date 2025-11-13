@@ -10,13 +10,17 @@
 
 <body class="flex flex-col bg-white min-h-screen">
     <!-- Header -->
+    <?php
+        $errors = $errors ?? [];
+        $old = $old ?? [];
+    ?>
     <?= view("components/header") ?>
 
 
     <div class="flex justify-center items-center bg-gray-50 min-h-screen">
         <div class="bg-white shadow-lg p-8 rounded-lg w-full max-w-md">
             <h1 class="mb-6 font-bold text-[color:var(--primary-orange)] text-2xl text-center">Create Account</h1>
-            <form method="post" action="/signup" class="space-y-5">
+            <form method="post" action="/signup" class="space-y-5" novalidate>
                 <div>
                     <label for="username" class="block mb-1 font-medium text-gray-700 text-sm">Username</label>
                     <input type="text" id="username" name="username" required
