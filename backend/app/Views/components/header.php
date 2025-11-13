@@ -2,7 +2,7 @@
     <div class="flex items-center gap-2">
         <a href="/" class="font-bold text-2xl tracking-wide">Harv-a-bite</a>
     </div>
-    <?php 
+    <?php
         $session = session();
         $user = $session->get('user');
     ?>
@@ -16,7 +16,7 @@
             </button>
         <?php else: ?>
             <?= view('components/buttons/button_secondary', ['href' => '/login', 'lbl' => 'Login']) ?>
-            <?= view('components/buttons/button_secondary', ['href' => '/signup', 'lbl' => 'Sign Up']) ?>
+            <?= view('components/buttons/button_secondary', ['href' => '/signup', 'lbl' => 'Sign Up'])  ?>
         <?php endif; ?>
 
         <?php if (strtolower($user['type'] ?? '') === 'admin'): ?>

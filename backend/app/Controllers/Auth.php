@@ -56,6 +56,8 @@ class Auth extends BaseController
     }
 
     public function logout(){
+        $errors = $errors ?? [];
+        $old = $old ?? [];
         session()->destroy();
         $params = session_get_cookie_params();
         setcookie(session_name(), '', time() - 3600, $params['path'] ?? '/', $params['domain'] ?? '', isset($_SERVER['HTTPS']), true);

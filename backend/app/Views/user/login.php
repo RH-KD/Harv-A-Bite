@@ -11,6 +11,10 @@
 
 <body class="flex flex-col bg-white min-h-screen">
     <!-- Header -->
+    <?php
+        $errors = $errors ?? [];
+        $old = $old ?? [];
+    ?>
     <?= view("components/header") ?>
 
 
@@ -22,7 +26,7 @@
                     <?= esc(session()->getFlashdata('error')) ?>
                 </div>
             <?php endif; ?>
-            <form method="post" action="<?= site_url('login') ?>">
+            <form method="post" action="<?= site_url('login') ?>" novalidate>
                 <?= csrf_field() ?>
                 <div class="mb-4">
                     <label for="email" class="block mb-2 text-gray-700">Email</label>
