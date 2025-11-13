@@ -86,7 +86,7 @@ class Auth extends BaseController
             'username'        => $post['username'],
             'email'           => $post['email'],
             'password_hash'   => password_hash($post['password'], PASSWORD_DEFAULT),
-            'type'            => 'user',
+            'type'            => $post['type'],
             'account_status'  => 1,
             'email_activated' => 0
         ];

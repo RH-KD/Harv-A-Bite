@@ -49,15 +49,31 @@
             <div class="overflow-x-auto">
                 <table class="divide-y divide-gray-200 min-w-full">
                     <thead class="bg-gray-50">
-                        <tr>
-                            <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Order ID</th>
+                        <?php
+                            $data = [
+                                ["title" => "Order ID"],
+                                ["title" => "Customer Name"],
+                                ["title" => "Items Name"],
+                                ["title" => "Status"],
+                                ["title" => "Date"],
+                                ["title" => "Action"],
+                            ];
+                        ?>
+                        <?php foreach($data as $title): ?>
+                        
+                            <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left" id = <?= esc(str_replace(' ', '_', strtolower($title["title"])))?>> <?= esc($title["title"]) ?></th>
+                        
+                        <?php endforeach; ?>
+
+                        <!--<tr>
+                            <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left" id="order_id">Order ID</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Customer</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Items</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Total</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Status</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-left">Date</th>
                             <th class="px-4 py-2 font-medium text-gray-500 text-xs text-right">Actions</th>
-                        </tr>
+                        </tr>-->
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                         <?php if (empty($orders)): ?>
